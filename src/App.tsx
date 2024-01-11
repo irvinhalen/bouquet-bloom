@@ -1,41 +1,20 @@
-import { Fragment } from 'react'
 import './App.css'
-import hyacinth from './assets/Hyacinth.mp4'
-import cherry_blossoms from './assets/Cherry_Blossom.mp4'
-import hibiscus from './assets/Hibiscus.mp4'
-import tulip from './assets/tulip.mp4'
-import daisy from './assets/Daisy.mp4'
+import Hyacinth from './components/Hyacinth'
+import Cherry_Blossoms from './components/Cherry_Blossoms'
+import Hibiscus from './components/Hibiscus'
+import Tulip from './components/Tulip'
+import Daisy from './components/Daisy'
 
 function App() {
 
   return (
-    <Fragment>
-      <div id='🪻'>
-        <video autoPlay loop muted>
-          <source src={hyacinth} type='video/mp4' />
-        </video>
-      </div>
-      <div id='🌸'>
-        <video autoPlay loop muted>
-          <source src={cherry_blossoms} type='video/mp4' />
-        </video>
-      </div>
-      <div id='🌺'>
-        <video autoPlay loop muted>
-          <source src={hibiscus} type='video/mp4' />
-        </video>
-      </div>
-      <div id='🌷'>
-        <video autoPlay loop muted>
-          <source src={tulip} type='video/mp4' />
-        </video>
-      </div>
-      <div id='🌼'>
-        <video autoPlay loop muted>
-          <source src={daisy} type='video/mp4' />
-        </video>
-      </div>
-    </Fragment>
+    <div id='💐'>
+      <Hyacinth />
+      <Cherry_Blossoms />
+      <Hibiscus />
+      <Tulip />
+      <Daisy />
+    </div>
   )
 }
 

@@ -1,10 +1,53 @@
+/* Start of 💐 */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+#root {
+  max-width: 100vw;
+  margin: 0 auto;
+  text-align: center;
+}
+
+html {
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+}
+
+html::-webkit-scrollbar { 
+  display: none;  /* Safari and Chrome */
+}
+
+html {
+  scroll-snap-type: y mandatory;
+}
+
+.flowers {
+  scroll-snap-align: start;
+}
+
+@keyframes gradient-movement { 
+  0%{background-position:10% 0%}
+  50%{background-position:91% 100%}
+  100%{background-position:10% 0%}
+}
+
+@keyframes bloom-doom {
+  from {
+    font-size: 0rem;
+    text-shadow: none;
+  }
+  to {
+    font-size: 14rem;
+  }
+}
+
+/* End of 💐 */
 
 /* Start of 🪻 */
 
 #🪻 {
-  background-color: black;
+  background-color: #9100B5;
   max-height: 100vh;
-  overflow: hidden;
+  position: relative;
 }
 
 #🪻 video {
@@ -12,14 +55,44 @@
   max-width: 100%;
 }
 
+#🪻 h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+  font-size: 0rem;
+  text-shadow: -15px -15px white;
+  background: -webkit-linear-gradient(180deg, #B5007E, #9100B5, #3700B5);
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: default;
+  animation: gradient-movement 2.5s ease infinite;
+}
+
+#🪻 span {
+  animation: bloom-doom 3s forwards;
+  animation-delay: calc(250ms * var(--i));
+}
+
+#🪻 .center-div{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
 /* End of 🪻 */
 
 /* Start of 🌸 */
 
 #🌸 {
-  background-color: black;
+  background-color: pink;
   max-height: 100vh;
-  overflow: hidden;
+  position: relative;
 }
 
 #🌸 video {
@@ -27,14 +100,44 @@
   max-width: 100%;
 }
 
+#🌸 h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+  font-size: 0rem;
+  text-shadow: -15px -15px white;
+  background: -webkit-linear-gradient(180deg, #FF8D57, #FFC0CB, #FF57C9);
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: default;
+  animation: gradient-movement 2.5s ease infinite;
+}
+
+#🌸 span {
+  animation: bloom-doom 3s forwards;
+  animation-delay: calc(250ms * var(--i));
+}
+
+#🌸 .center-div{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
 /* End of 🌸 */
 
 /* Start of 🌺 */
 
 #🌺 {
-  background-color: black;
+  background-color: orange;
   max-height: 100vh;
-  overflow: hidden;
+  position: relative;
 }
 
 #🌺 video {
@@ -42,14 +145,44 @@
   max-width: 100%;
 }
 
+#🌺 h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+  font-size: 0rem;
+  text-shadow: -15px -15px white;
+  background: -webkit-linear-gradient(180deg, #D9FF00, #FFA500, #FF2600);
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: default;
+  animation: gradient-movement 2.5s ease infinite;
+}
+
+#🌺 span {
+  animation: bloom-doom 3s forwards;
+  animation-delay: calc(250ms * var(--i));
+}
+
+#🌺 .center-div{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
 /* End of 🌺 */
 
 /* Start of 🌷 */
 
 #🌷 {
-  background-color: black;
+  background-color: rgb(255, 0, 30);
   max-height: 100vh;
-  overflow: hidden;
+  position: relative;
 }
 
 #🌷 video {
@@ -57,19 +190,79 @@
   max-width: 100%;
 }
 
+#🌷 h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+  font-size: 0rem;
+  text-shadow: -15px -15px white;
+  background: -webkit-linear-gradient(180deg, #FF6200, #FF001E, #FF009E);
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: default;
+  animation: gradient-movement 2.5s ease infinite;
+}
+
+#🌷 span {
+  animation: bloom-doom 3s forwards;
+  animation-delay: calc(250ms * var(--i));
+}
+
+#🌷 .center-div{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
 /* End of 🌷 */
 
 /* Start of 🌼 */
 
 #🌼 {
-  background-color: black;
+  background-color: white;
   max-height: 100vh;
-  overflow: hidden;
+  position: relative;
 }
 
 #🌼 video {
   min-height: 100vh;
   max-width: 100%;
+}
+
+#🌼 h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+  font-size: 0rem;
+  text-shadow: -15px -15px white;
+  background: -webkit-linear-gradient(180deg, #8EFF00, #FFF000, #FF7100);
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: default;
+  animation: gradient-movement 2.5s ease infinite;
+}
+
+#🌼 span {
+  animation: bloom-doom 3s forwards;
+  animation-delay: calc(250ms * var(--i));
+}
+
+#🌼 .center-div{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
 }
 
 /* End of 🌼 */
