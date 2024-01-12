@@ -16,14 +16,14 @@ function Hibiscus() {
         </video>
         <div className='center-div'>
             <h1>
-                <span style={{'--i': '7'} as React.CSSProperties}>H</span>
-                <span style={{'--i': '8'} as React.CSSProperties}>i</span>
-                <span style={{'--i': '6'} as React.CSSProperties}>b</span>
-                <span style={{'--i': '4'} as React.CSSProperties}>i</span>
-                <span style={{'--i': '5'} as React.CSSProperties}>s</span>
-                <span style={{'--i': '2'} as React.CSSProperties}>c</span>
-                <span style={{'--i': '3'} as React.CSSProperties}>u</span>
-                <span style={{'--i': '1'} as React.CSSProperties}>s</span>
+                <span style={{'--i': '7'} as React.CSSProperties} className='🌺-seed'>H</span>
+                <span style={{'--i': '8'} as React.CSSProperties} className='🌺-seed'>i</span>
+                <span style={{'--i': '6'} as React.CSSProperties} className='🌺-seed'>b</span>
+                <span style={{'--i': '4'} as React.CSSProperties} className='🌺-seed'>i</span>
+                <span style={{'--i': '5'} as React.CSSProperties} className='🌺-seed'>s</span>
+                <span style={{'--i': '2'} as React.CSSProperties} className='🌺-seed'>c</span>
+                <span style={{'--i': '3'} as React.CSSProperties} className='🌺-seed'>u</span>
+                <span style={{'--i': '1'} as React.CSSProperties} className='🌺-seed'>s</span>
             </h1>
         </div>
     </div>

@@ -40,7 +40,7 @@ html {
   }
 }
 
-@keyframes tree-shaking {
+@keyframes petal-dance {
   0% {
     transform: rotate(0deg);
   }
@@ -75,14 +75,14 @@ html {
 }
 
 #💐 #navigation #nav-list button:hover {
-  animation: tree-shaking 250ms ease-in-out infinite;
+  animation: petal-dance 350ms ease-in-out infinite;
 }
 
-.non-selected-button {
+.non-selected-buttons {
   font-size: 2.5rem!important;
 }
 
-.non-selected-button:hover {
+.non-selected-buttons:hover {
   animation: none!important;
 }
 
@@ -99,7 +99,7 @@ button:focus-visible {
 /* Start of 🪻 */
 
 #🪻 {
-  background-color: #9100B5;
+  background: linear-gradient(to bottom, #9100B5, pink);
   max-height: 100vh;
   position: relative;
 }
@@ -120,10 +120,21 @@ button:focus-visible {
   -webkit-text-fill-color: transparent;
   cursor: default;
   animation: gradient-movement 2.5s ease infinite;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
-#🪻 span {
+.🪻-watered{
+  font-size: 0rem;
   animation: bloom-doom 3s forwards;
+  animation-delay: calc(250ms * var(--i));
+}
+
+.🪻-wilt {
+  font-size: 9rem;
+  animation: bloom-doom 1.5s forwards;
+  animation-direction: reverse;
   animation-delay: calc(250ms * var(--i));
 }
 
@@ -144,7 +155,7 @@ button:focus-visible {
 /* Start of 🌸 */
 
 #🌸 {
-  background-color: pink;
+  background: linear-gradient(to bottom, pink, orange);
   max-height: 100vh;
   position: relative;
 }
@@ -165,10 +176,21 @@ button:focus-visible {
   -webkit-text-fill-color: transparent;
   cursor: default;
   animation: gradient-movement 2.5s ease infinite;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
-#🌸 span {
+.🌸-watered{
+  font-size: 0rem;
   animation: bloom-doom 3s forwards;
+  animation-delay: calc(250ms * var(--i));
+}
+
+.🌸-wilt {
+  font-size: 9rem;
+  animation: bloom-doom 1.5s forwards;
+  animation-direction: reverse;
   animation-delay: calc(250ms * var(--i));
 }
 
@@ -189,7 +211,7 @@ button:focus-visible {
 /* Start of 🌺 */
 
 #🌺 {
-  background-color: orange;
+  background: linear-gradient(to bottom, orange, rgb(255, 0, 30));
   max-height: 100vh;
   position: relative;
 }
@@ -210,10 +232,21 @@ button:focus-visible {
   -webkit-text-fill-color: transparent;
   cursor: default;
   animation: gradient-movement 2.5s ease infinite;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
-#🌺 span {
+.🌺-watered{
+  font-size: 0rem;
   animation: bloom-doom 3s forwards;
+  animation-delay: calc(250ms * var(--i));
+}
+
+.🌺-wilt {
+  font-size: 9rem;
+  animation: bloom-doom 1.5s forwards;
+  animation-direction: reverse;
   animation-delay: calc(250ms * var(--i));
 }
 
@@ -234,7 +267,7 @@ button:focus-visible {
 /* Start of 🌷 */
 
 #🌷 {
-  background-color: rgb(255, 0, 30);
+  background: linear-gradient(to bottom, rgb(255, 0, 30), white);
   max-height: 100vh;
   position: relative;
 }
@@ -255,10 +288,21 @@ button:focus-visible {
   -webkit-text-fill-color: transparent;
   cursor: default;
   animation: gradient-movement 2.5s ease infinite;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
-#🌷 span {
+.🌷-watered{
+  font-size: 0rem;
   animation: bloom-doom 3s forwards;
+  animation-delay: calc(250ms * var(--i));
+}
+
+.🌷-wilt {
+  font-size: 9rem;
+  animation: bloom-doom 1.5s forwards;
+  animation-direction: reverse;
   animation-delay: calc(250ms * var(--i));
 }
 
@@ -279,7 +323,7 @@ button:focus-visible {
 /* Start of 🌼 */
 
 #🌼 {
-  background-color: white;
+  background: linear-gradient(to bottom, white, #9100B5);
   max-height: 100vh;
   position: relative;
 }
@@ -300,10 +344,21 @@ button:focus-visible {
   -webkit-text-fill-color: transparent;
   cursor: default;
   animation: gradient-movement 2.5s ease infinite;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
-#🌼 span {
+.🌼-watered{
+  font-size: 0rem;
   animation: bloom-doom 3s forwards;
+  animation-delay: calc(250ms * var(--i));
+}
+
+.🌼-wilt {
+  font-size: 9rem;
+  animation: bloom-doom 1.5s forwards;
+  animation-direction: reverse;
   animation-delay: calc(250ms * var(--i));
 }
 

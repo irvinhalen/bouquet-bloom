@@ -8,11 +8,11 @@ function Tulip() {
         </video>
         <div className='center-div'>
             <h1>
-                <span style={{'--i': '2'} as React.CSSProperties}>T</span>
-                <span style={{'--i': '4'} as React.CSSProperties}>u</span>
-                <span style={{'--i': '3'} as React.CSSProperties}>l</span>
-                <span style={{'--i': '5'} as React.CSSProperties}>i</span>
-                <span style={{'--i': '1'} as React.CSSProperties}>p</span>
+                <span style={{'--i': '2'} as React.CSSProperties} className='🌷-seed'>T</span>
+                <span style={{'--i': '4'} as React.CSSProperties} className='🌷-seed'>u</span>
+                <span style={{'--i': '3'} as React.CSSProperties} className='🌷-seed'>l</span>
+                <span style={{'--i': '5'} as React.CSSProperties} className='🌷-seed'>i</span>
+                <span style={{'--i': '1'} as React.CSSProperties} className='🌷-seed'>p</span>
             </h1>
         </div>
     </div>

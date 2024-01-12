@@ -16,11 +16,11 @@ function Daisy() {
         </video>
         <div className='center-div'>
             <h1>
-                <span style={{'--i': '5'} as React.CSSProperties}>D</span>
-                <span style={{'--i': '2'} as React.CSSProperties}>a</span>
-                <span style={{'--i': '3'} as React.CSSProperties}>i</span>
-                <span style={{'--i': '4'} as React.CSSProperties}>s</span>
-                <span style={{'--i': '1'} as React.CSSProperties}>y</span>
+                <span style={{'--i': '5'} as React.CSSProperties} className='🌼-seed'>D</span>
+                <span style={{'--i': '2'} as React.CSSProperties} className='🌼-seed'>a</span>
+                <span style={{'--i': '3'} as React.CSSProperties} className='🌼-seed'>i</span>
+                <span style={{'--i': '4'} as React.CSSProperties} className='🌼-seed'>s</span>
+                <span style={{'--i': '1'} as React.CSSProperties} className='🌼-seed'>y</span>
             </h1>
         </div>
     </div>
