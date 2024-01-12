@@ -36,8 +36,62 @@ html {
     text-shadow: none;
   }
   to {
-    font-size: 14rem;
+    font-size: 9rem;
   }
+}
+
+@keyframes tree-shaking {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-60deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+#💐 #navigation {
+  position: fixed;
+  z-index: 2;
+  opacity: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+#💐 #navigation #nav-list {
+  font-size: 2rem;
+  list-style: none;
+}
+
+#💐 #navigation #nav-list button {
+  padding: 0;
+  border: none;
+  background: none;
+  font-size: 5rem;
+  transition: font-size 500ms, background-color 250ms;
+}
+
+#💐 #navigation #nav-list button:hover {
+  animation: tree-shaking 250ms ease-in-out infinite;
+}
+
+.non-selected-button {
+  font-size: 2.5rem!important;
+}
+
+.non-selected-button:hover {
+  animation: none!important;
+}
+
+#💐 #navigation #nav-list button:hover {
+  border: none;
+}
+#💐 #navigation #nav-list button:focus,
+button:focus-visible {
+  outline: none;
 }
 
 /* End of 💐 */
@@ -59,7 +113,7 @@ html {
   font-family: 'Poppins', sans-serif;
   font-weight: 900;
   font-size: 0rem;
-  text-shadow: -15px -15px white;
+  text-shadow: -10px -10px white;
   background: -webkit-linear-gradient(180deg, #B5007E, #9100B5, #3700B5);
   background-size: 200% auto;
   background-clip: text;
