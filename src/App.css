@@ -1,5 +1,14 @@
+/* Start of Garden */
+
 /* Start of 💐 */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Birthstone+Bounce:wght@400;500&display=swap');
+
+@font-face {
+  font-family: JollyBee;
+  src: url('./assets/VAG Rounded Bold.ttf');
+}
 
 #root {
   max-width: 100vw;
@@ -71,7 +80,7 @@ html {
   border: none;
   background: none;
   font-size: 5rem;
-  transition: font-size 500ms, background-color 250ms;
+  transition: font-size 500ms;
 }
 
 #💐 #navigation #nav-list button:hover {
@@ -102,6 +111,7 @@ button:focus-visible {
   background: linear-gradient(to bottom, #9100B5, pink);
   max-height: 100vh;
   position: relative;
+  overflow: hidden;
 }
 
 #🪻 video {
@@ -158,6 +168,7 @@ button:focus-visible {
   background: linear-gradient(to bottom, pink, orange);
   max-height: 100vh;
   position: relative;
+  overflow: hidden;
 }
 
 #🌸 video {
@@ -214,6 +225,7 @@ button:focus-visible {
   background: linear-gradient(to bottom, orange, rgb(255, 0, 30));
   max-height: 100vh;
   position: relative;
+  overflow: hidden;
 }
 
 #🌺 video {
@@ -270,6 +282,7 @@ button:focus-visible {
   background: linear-gradient(to bottom, rgb(255, 0, 30), white);
   max-height: 100vh;
   position: relative;
+  overflow: hidden;
 }
 
 #🌷 video {
@@ -326,6 +339,7 @@ button:focus-visible {
   background: linear-gradient(to bottom, white, #9100B5);
   max-height: 100vh;
   position: relative;
+  overflow: hidden;
 }
 
 #🌼 video {
@@ -375,3 +389,199 @@ button:focus-visible {
 }
 
 /* End of 🌼 */
+
+/* End of Garden */
+
+/* Start of 🌻 */
+
+#navigation-page {
+  position: fixed;
+  z-index: 2;
+  opacity: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  right: 0;
+  padding-right: 40px;
+}
+
+#navigation-page #nav-list-page {
+  font-size: 2rem;
+  list-style: none;
+}
+
+#navigation-page #nav-list-page button {
+  padding: 0;
+  border: none;
+  background: none;
+  font-size: 2.5rem;
+  transition: font-size 500ms;
+}
+
+#navigation-page #nav-list-page button:hover {
+  font-size: 5rem;
+}
+
+#navigation-page #nav-list-page button:hover {
+  border: none;
+}
+#navigation-page #nav-list-page button:focus,
+button:focus-visible {
+  outline: none;
+}
+
+#🌻 {
+  background: linear-gradient(to bottom, white, brown);
+  max-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+#🌻 video {
+  min-height: 100vh;
+  max-width: 100%;
+}
+
+/* End of 🌻 */
+
+/* Start of Garden */
+
+#🪴 #🚿 {
+  max-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+#🪴 #🚿 img {
+  min-height: 100vh;
+  max-width: 100%;
+  margin-top: -15%;
+  transform: scaleX(-1);
+}
+
+.custom-shape-divider-bottom-1705297075 {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-bottom-1705297075 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+  transform: rotateY(180deg);
+  z-index: 1;
+}
+
+.custom-shape-divider-bottom-1705297075 .shape-fill {
+  fill: #FFFFFF;
+}
+
+#🪴 #germinate {
+  height: 25rem;
+  max-height: 100vh;
+  background-color: white;
+  position: relative;
+  z-index: 1;
+}
+
+#🪴 #germinate img {
+  position: absolute;
+  height: 80%;
+  top: 15%;
+  left: 25.8%;
+  transform: rotate(30deg);
+}
+
+.fertilize {
+  color: #231F20;
+  position: absolute;
+  width: 100%;
+  font-family: 'Parisienne', cursive;
+  font-size: 5rem;
+  top: 0;
+  left: -7%;
+}
+
+.fertilize span {
+  color: #E0163D;
+  font-family: JollyBee;
+}
+
+.bloom {
+  color: #231F20;
+  position: absolute;
+  bottom: -12.1%;
+  right: -11.1%;
+  width: 100%;
+  font-family: 'Birthstone Bounce', cursive;
+  font-weight: 400;
+  font-size: 12rem;
+}
+
+.custom-shape-divider-top-1705309324 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1705309324 svg {
+  position: relative;
+  display: block;
+  width: calc(121% + 1.3px);
+  height: 151px;
+}
+
+.custom-shape-divider-top-1705309324 .shape-fill {
+  fill: #FFFFFF;
+}
+
+#🪴 #🪻🌱 {
+  max-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+#🪴 #🪻🌱 #hyacinth-bg {
+  min-height: 100vh;
+  max-width: 100%;
+}
+
+#🪴 #🪻🌱 #CaramelSmalls {
+  position: absolute;
+  height: 25%;
+  z-index: 1;
+  bottom: 31.5%;
+  left: 2%;
+}
+
+#🪴 #🪻🌱 #KangaIru {
+  position: absolute;
+  height: 25%;
+  z-index: 1;
+  bottom: 5%;
+  left: -2.5%;
+}
+
+#🪴 #🪻🌱 #pink_bg {
+  position: absolute;
+  height: 30%;
+  bottom: 1.5%;
+  left: 1.5%;
+}
+
+#🪴 #🪻🌱 #pink_bg2 {
+  position: absolute;
+  height: 30%;
+  bottom: 30%;
+  left: 1.5%;
+}
+
+/* End of Garden */
