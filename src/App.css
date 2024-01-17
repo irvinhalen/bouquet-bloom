@@ -61,6 +61,27 @@ html {
   }
 }
 
+@keyframes bumble-bee {
+  0% {
+    transform: translateX(0px) translateY(0px);
+  }
+  20% {
+    transform: translateX(-50px) translateY(-50px);
+  }
+  40% {
+    transform: translateX(-100px) translateY(50px);
+  }
+  60% {
+    transform: translateX(-150px) translateY(-50px);
+  }
+  80% {
+    transform: translateX(-100px) translateY(-100px);
+  }
+  100% {
+    transform: translateX(0px) translateY(0px);
+  }
+}
+
 #💐 #navigation {
   position: fixed;
   z-index: 2;
@@ -81,6 +102,40 @@ html {
   background: none;
   font-size: 5rem;
   transition: font-size 500ms;
+}
+
+button[name='🪻'].pollinate::after {
+  content: '🦋';
+  position: absolute;
+  left: 7%;
+  transform: rotate(45deg);
+}
+
+button[name='🌸'].pollinate::after {
+  content: '🦋';
+  position: absolute;
+  left: 0;
+}
+
+button[name='🌺'].pollinate::after {
+  content: '🦋';
+  position: absolute;
+  left: 2%;
+  transform: rotate(15deg);
+}
+
+button[name='🌷'].pollinate::after {
+  content: '🦋';
+  position: absolute;
+  left: 7%;
+  transform: rotate(30deg);
+}
+
+button[name='🌼'].pollinate::after {
+  content: '🦋';
+  position: absolute;
+  left: 9%;
+  transform: rotate(5deg);
 }
 
 #💐 #navigation #nav-list button:hover {
@@ -123,6 +178,7 @@ button:focus-visible {
   font-family: 'Poppins', sans-serif;
   font-weight: 900;
   font-size: 0rem;
+  height: 11rem;
   text-shadow: -10px -10px white;
   background: -webkit-linear-gradient(180deg, #B5007E, #9100B5, #3700B5);
   background-size: 200% auto;
@@ -294,6 +350,7 @@ button:focus-visible {
   font-family: 'Poppins', sans-serif;
   font-weight: 900;
   font-size: 0rem;
+  height: 11rem;
   text-shadow: -15px -15px white;
   background: -webkit-linear-gradient(180deg, #FF6200, #FF001E, #FF009E);
   background-size: 200% auto;
@@ -351,6 +408,7 @@ button:focus-visible {
   font-family: 'Poppins', sans-serif;
   font-weight: 900;
   font-size: 0rem;
+  height: 11rem;
   text-shadow: -15px -15px white;
   background: -webkit-linear-gradient(180deg, #8EFF00, #FFF000, #FF7100);
   background-size: 200% auto;
@@ -495,6 +553,7 @@ button:focus-visible {
   top: 15%;
   left: 25.8%;
   transform: rotate(30deg);
+  animation: bumble-bee 1s infinite;
 }
 
 .fertilize {
@@ -521,6 +580,11 @@ button:focus-visible {
   font-family: 'Birthstone Bounce', cursive;
   font-weight: 400;
   font-size: 12rem;
+  background: -webkit-linear-gradient(180deg, #16A2E0, #16E0B9, #16E054);
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient-movement 2.5s ease infinite;
 }
 
 .custom-shape-divider-top-1705309324 {
@@ -552,6 +616,7 @@ button:focus-visible {
 #🪴 #🪻🌱 #hyacinth-bg {
   min-height: 100vh;
   max-width: 100%;
+  margin-top: -5%;
 }
 
 #🪴 #🪻🌱 #CaramelSmalls {
@@ -577,7 +642,7 @@ button:focus-visible {
   left: 1.5%;
 }
 
-#🪴 #🪻🌱 #pink_bg2 {
+#🪴 #🪻🌱 #blue_bg {
   position: absolute;
   height: 30%;
   bottom: 30%;

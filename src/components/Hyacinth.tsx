@@ -1,5 +1,5 @@
-import React from 'react';
 import hyacinth from '../assets/Hyacinth.mp4'
+import React from 'react';
 
 function Hyacinth() {
     const vidRef = React.useRef<HTMLVideoElement>(null);

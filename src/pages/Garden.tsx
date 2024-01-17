@@ -1,7 +1,8 @@
 import hyacinth from '../assets/Hyacinth.jpg'
 import KangaIru from '../assets/KangaIru.png'
 import CaramelSmalls from '../assets/CaramelSmalls.png'
-import pink_bg from '../assets/pink-bg.png'
+import pink_bg from '../assets/bg-pink.png'
+import blue_bg from '../assets/bg-blue.png'
 import JollyBee from '../assets/JollyBee.png'
 import watering from '../assets/Water.jpg'
 
@@ -30,7 +31,7 @@ function Garden() {
         <img src={CaramelSmalls} alt='white tiger' id='CaramelSmalls' />
         <img src={KangaIru} alt='kangaroo' id='KangaIru' />
         <img src={pink_bg} alt='pink background for portrait' id='pink_bg' />
-        <img src={pink_bg} alt='pink background for portrait' id='pink_bg2' />
+        <img src={blue_bg} alt='pink background for portrait' id='blue_bg' />
         <img src={hyacinth} alt='hyacinth' id='hyacinth-bg' />
       </div>
     </div>
