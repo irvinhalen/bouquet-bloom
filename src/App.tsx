@@ -10,10 +10,50 @@ function App() {
   const butterflies = () => {
     setIsPollinating(true);
     const url_path:string = window.location.pathname;
+    const flutter = document.createElement('style');
+    flutter.setAttribute('id', 'flutter');
+    flutter.innerHTML =
+    `button[name='🪻'].pollinate::after {
+      content: '🦋';
+      position: absolute;
+      left: 7%;
+      transform: rotate(45deg);
+      transition: opacity 1s;
+    }
+    
+    button[name='🌸'].pollinate::after {
+      content: '🦋';
+      position: absolute;
+      left: 0;
+    }
+    
+    button[name='🌺'].pollinate::after {
+      content: '🦋';
+      position: absolute;
+      left: 2%;
+      transform: rotate(15deg);
+    }
+    
+    button[name='🌷'].pollinate::after {
+      content: '🦋';
+      position: absolute;
+      left: 7%;
+      transform: rotate(30deg);
+    }
+    
+    button[name='🌼'].pollinate::after {
+      content: '🦋';
+      position: absolute;
+      left: 9%;
+      transform: rotate(5deg);
+    }`;
     if (url_path.toLowerCase() == '/bouquet') {
       if (isPollinating === true) {
+        const flutter:any = document.getElementById('flutter');
+        flutter.remove();
         setIsPollinating(false);
       } else {
+        document.head.appendChild(flutter);
         setIsPollinating(true);
       }
     }

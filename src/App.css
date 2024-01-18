@@ -104,40 +104,6 @@ html {
   transition: font-size 500ms;
 }
 
-button[name='🪻'].pollinate::after {
-  content: '🦋';
-  position: absolute;
-  left: 7%;
-  transform: rotate(45deg);
-}
-
-button[name='🌸'].pollinate::after {
-  content: '🦋';
-  position: absolute;
-  left: 0;
-}
-
-button[name='🌺'].pollinate::after {
-  content: '🦋';
-  position: absolute;
-  left: 2%;
-  transform: rotate(15deg);
-}
-
-button[name='🌷'].pollinate::after {
-  content: '🦋';
-  position: absolute;
-  left: 7%;
-  transform: rotate(30deg);
-}
-
-button[name='🌼'].pollinate::after {
-  content: '🦋';
-  position: absolute;
-  left: 9%;
-  transform: rotate(5deg);
-}
-
 #💐 #navigation #nav-list button:hover {
   animation: petal-dance 350ms ease-in-out infinite;
 }
