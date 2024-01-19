@@ -6,5 +6,6 @@ export default defineConfig({
   plugins: [react()],
   server: {
     port: 5330
-  }
+  },
+  base: 'http://localhost:5330/sunflower'
 })
