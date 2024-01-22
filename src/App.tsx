@@ -74,13 +74,13 @@ function App() {
       <Router>
         <div id='navigation-page'>
               <ul id='nav-list-page'>
-                  <li><Link to={'sunflower'}><button onClick={cocoon}>🌻</button></Link></li>
+                  <li><Link to={'/'}><button onClick={cocoon}>🌻</button></Link></li>
                   <li><Link to={'bouquet'}><button onClick={butterflies}>🦋</button></Link></li>
                   <li><Link to={'garden'}><button onClick={cocoon}>🐝</button></Link></li>
               </ul>
           </div>
         <Routes>
-          <Route path='/sunflower' element={<Sunflower />} />
+          <Route path='/' element={<Sunflower />} />
           <Route path='/bouquet' element={<Bouquet />} />
           <Route path='/garden' element={<Garden />} />
         </Routes>
