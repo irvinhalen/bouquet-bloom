@@ -1,4 +1,5 @@
-import hyacinth from '../assets/Hyacinth.jpg'
+import Hyacinth from '../assets/Hyacinth.png'
+import hyacinth_water from '../assets/Hyacinth-Water.jpg'
 import KangaIru from '../assets/Latte.png'
 import CaramelSmalls from '../assets/Creamy.png'
 import pink_bg from '../assets/bg-pink.png'
@@ -32,7 +33,7 @@ function Garden() {
         <img src={KangaIru} alt='kangaroo' id='KangaIru' />
         <img src={pink_bg} alt='pink background for portrait' id='pink_bg' />
         <img src={blue_bg} alt='pink background for portrait' id='blue_bg' />
-        <img src={hyacinth} alt='hyacinth' id='hyacinth-bg' />
+        <img src={hyacinth_water} alt='hyacinth' id='hyacinth-bg' />
       </div>
     </div>
   )
