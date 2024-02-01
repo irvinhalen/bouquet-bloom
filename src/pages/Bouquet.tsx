@@ -15,8 +15,10 @@ function Bouquet() {
     addEventListener("wheel", (event) => {
       event.preventDefault();
       if(event.deltaY < 0){
+        document.getElementById('🪻-button').click();
         document.dispatchEvent(new KeyboardEvent('keydown', {'key': 'ArrowUp'}));
       } else {
+        document.getElementById('🌼-button').click();
         document.dispatchEvent(new KeyboardEvent('keydown', {'key': 'ArrowDown'}));
       }
     }, {passive: false});
@@ -157,11 +159,11 @@ function Bouquet() {
     <div id='💐'>
         <div id='navigation'>
             <ul id='nav-list'>
-                <li><button onClick={seedClick} name='🪻' className={`pollinate bouquet-buttons ${isHyacinthVisible ? '':'non-selected-buttons'}`}>🪻</button></li>
-                <li><button onClick={seedClick} name='🌸' className={`pollinate bouquet-buttons ${isCherryBlossomVisible ? '':'non-selected-buttons'}`}>🌸</button></li>
-                <li><button onClick={seedClick} name='🌺' className={`pollinate bouquet-buttons ${isHibiscusVisible ? '':'non-selected-buttons'}`}>🌺</button></li>
-                <li><button onClick={seedClick} name='🌷' className={`pollinate bouquet-buttons ${isTulipVisible ? '':'non-selected-buttons'}`}>🌷</button></li>
-                <li><button onClick={seedClick} name='🌼' className={`pollinate bouquet-buttons ${isDaisyVisible ? '':'non-selected-buttons'}`}>🌼</button></li>
+                <li><button id='🪻-button' onClick={seedClick} name='🪻' className={`pollinate bouquet-buttons ${isHyacinthVisible ? '':'non-selected-buttons'}`}>🪻</button></li>
+                <li><button id= '🌸-button' onClick={seedClick} name='🌸' className={`pollinate bouquet-buttons ${isCherryBlossomVisible ? '':'non-selected-buttons'}`}>🌸</button></li>
+                <li><button id='🌺-button' onClick={seedClick} name='🌺' className={`pollinate bouquet-buttons ${isHibiscusVisible ? '':'non-selected-buttons'}`}>🌺</button></li>
+                <li><button id='🌷-button' onClick={seedClick} name='🌷' className={`pollinate bouquet-buttons ${isTulipVisible ? '':'non-selected-buttons'}`}>🌷</button></li>
+                <li><button id='🌼-button' onClick={seedClick} name='🌼' className={`pollinate bouquet-buttons ${isDaisyVisible ? '':'non-selected-buttons'}`}>🌼</button></li>
             </ul>
         </div>
         <Hyacinth />
