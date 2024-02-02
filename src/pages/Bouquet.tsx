@@ -15,10 +15,10 @@ function Bouquet() {
     addEventListener("wheel", (event) => {
       event.preventDefault();
       if(event.deltaY < 0){
-        document.getElementById('🪻-button').click();
+        document.getElementById('💐')!.click();
         document.dispatchEvent(new KeyboardEvent('keydown', {'key': 'ArrowUp'}));
-      } else {
-        document.getElementById('🌼-button').click();
+      }else{
+        document.getElementById('💐')!.click();
         document.dispatchEvent(new KeyboardEvent('keydown', {'key': 'ArrowDown'}));
       }
     }, {passive: false});
@@ -63,27 +63,27 @@ function Bouquet() {
   
     const hyacinthCallback = (entries:any) => {
       const [ entry ] = entries;
-      setIsHyacinthVisible(entry.isIntersecting)
+      setIsHyacinthVisible(entry.isIntersecting);
     }
   
     const cherryBlossomCallback = (entries:any) => {
       const [ entry ] = entries;
-      setIsCherryBlossomVisible(entry.isIntersecting)
+      setIsCherryBlossomVisible(entry.isIntersecting);
     }
   
     const hibiscusCallback = (entries:any) => {
       const [ entry ] = entries;
-      setIsHibiscusVisible(entry.isIntersecting)
+      setIsHibiscusVisible(entry.isIntersecting);
     }
   
     const tulipCallback = (entries:any) => {
       const [ entry ] = entries;
-      setIsTulipVisible(entry.isIntersecting)
+      setIsTulipVisible(entry.isIntersecting);
     }
   
     const daisyCallback = (entries:any) => {
       const [ entry ] = entries;
-      setIsDaisyVisible(entry.isIntersecting)
+      setIsDaisyVisible(entry.isIntersecting);
     }  
   
     useEffect(() => {
