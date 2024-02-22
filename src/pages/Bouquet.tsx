@@ -11,21 +11,6 @@ function Bouquet() {
     const [isHibiscusVisible, setIsHibiscusVisible] = useState(false);
     const [isTulipVisible, setIsTulipVisible] = useState(false);
     const [isDaisyVisible, setIsDaisyVisible] = useState(false);
-
-    addEventListener("wheel", (event) => {
-      event.preventDefault();
-      if(event.deltaY < 0){
-        scrollBy({
-          top: window.innerHeight *-1,
-          behavior: 'smooth'
-        })
-      }else{
-        scrollBy({
-          top: window.innerHeight,
-          behavior: 'smooth'
-        })
-      }
-    }, {passive: false});
   
     function scrollTheVine(flower_bud:any) {
       const flowerBud = document.getElementById(flower_bud) as HTMLElement;

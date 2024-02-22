@@ -3,13 +3,34 @@ import Sunflower from './pages/Sunflower'
 import Bouquet from './pages/Bouquet'
 import Garden from './pages/Garden'
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
+
+  function scrollSnapping(event:WheelEvent) {
+    event.preventDefault();
+    if (event.deltaY < 0) {
+      scrollBy({
+        top: window.innerHeight * -1,
+        behavior: 'smooth'
+      });
+    } else {
+      scrollBy({
+        top: window.innerHeight,
+        behavior: 'smooth'
+      });
+    }
+  }
 
 function App() {
   const [isPollinating, setIsPollinating] = useState(false);
+  const [isScrollSnapping, setIsScrollSnapping] = useState(false);
+
   const butterflies = () => {
     let path:string = window.location.pathname;
     if(path){
+      if(!isScrollSnapping) {
+        window.addEventListener("wheel", scrollSnapping, { passive: false });
+        setIsScrollSnapping(true);
+      }
       setIsPollinating(false);
       const flutter = document.createElement('style');
       flutter.setAttribute('id', 'flutter');
@@ -67,7 +88,24 @@ function App() {
       flutter.remove();
       setIsPollinating(false);
     }
+    if(isScrollSnapping) {
+      window.removeEventListener("wheel", scrollSnapping);
+      setIsScrollSnapping(false);
+    }
   }
+
+  useEffect(() => {
+    let path:string = window.location.pathname;
+    if(path) {
+      if (path.toLowerCase() == '/bouquet') {
+        if(!isScrollSnapping) {
+        window.addEventListener("wheel", scrollSnapping, { passive: false });
+        setIsScrollSnapping(true);
+      }
+      }
+    }
+  }, [])
+  
 
   return (
     <div>
