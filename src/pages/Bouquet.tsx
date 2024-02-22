@@ -15,11 +15,15 @@ function Bouquet() {
     addEventListener("wheel", (event) => {
       event.preventDefault();
       if(event.deltaY < 0){
-        document.getElementById('💐')!.click();
-        document.dispatchEvent(new KeyboardEvent('keydown', {'key': 'ArrowUp'}));
+        scrollBy({
+          top: window.innerHeight *-1,
+          behavior: 'smooth'
+        })
       }else{
-        document.getElementById('💐')!.click();
-        document.dispatchEvent(new KeyboardEvent('keydown', {'key': 'ArrowDown'}));
+        scrollBy({
+          top: window.innerHeight,
+          behavior: 'smooth'
+        })
       }
     }, {passive: false});
   
