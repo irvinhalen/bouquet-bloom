@@ -1,7 +1,7 @@
 import Hyacinth from '../assets/Hyacinth.png'
 import hyacinth_water from '../assets/Hyacinth-Water.jpg'
-import KangaIru from '../assets/Latte.png'
-import CaramelSmalls from '../assets/Creamy.png'
+import KangaIru from '../assets/LatteBalls.png'
+import CaramelSmalls from '../assets/CreamyBalls.png'
 import pink_bg from '../assets/bg-pink.png'
 import blue_bg from '../assets/bg-blue.png'
 import JollyBee from '../assets/JollyBee.png'
@@ -34,6 +34,9 @@ function Garden() {
         <img src={pink_bg} alt='pink background for portrait' id='pink_bg' />
         <img src={blue_bg} alt='pink background for portrait' id='blue_bg' />
         <img src={hyacinth_water} alt='hyacinth' id='hyacinth-bg' />
+      </div>
+      <div id='HyacinthVase'>
+        <img src={Hyacinth} alt="Flower" id="HyacinthFlower" />
       </div>
     </div>
   )

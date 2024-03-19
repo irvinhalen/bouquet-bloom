@@ -605,16 +605,34 @@ button:focus-visible {
   position: absolute;
   height: 25%;
   z-index: 1;
-  bottom: 31.5%;
-  left: 2%;
+  bottom: 34%;
+  left: 2.3%;
 }
 
 #🪴 #🪻🌱 #KangaIru {
   position: absolute;
-  height: 35%;
+  height: 25%;
   z-index: 1;
-  bottom: -2%;
-  left: 4%;
+  bottom: 5%;
+  left: 3%;
+}
+
+#HyacinthFlower {
+  position: absolute;
+  height: 250%;
+  margin-top: -35rem;
+  margin-left: -22rem;
+  z-index: 1;
+}
+
+#HyacinthVase {
+  position: absolute;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  height: 30rem;
+  width: 15rem;
+  bottom: -165%;
+  left: 15%;
 }
 
 #🪴 #🪻🌱 #pink_bg {
